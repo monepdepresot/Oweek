@@ -15,37 +15,7 @@ export default function Home() {
     
   }, []);
 
-  const testimonialsList = testimonials.map((testimonials) => (
-    <div key={testimonials.id} className="col">
-      <div className="card h-100">
-        <div className="d-grid gap-3">
-          <img
-            src={testimonials.image}
-            alt="Testimonials"
-            className="rounded-circle shadow-sm mx-auto"
-            width={256}
-            loading="lazy"
-          />
-          <div>
-            <h4 className="text-center">{testimonials.name}</h4>
-            <q>{testimonials.testimoni}</q>
-          </div>
-        </div>
-      </div>
-    </div>
-  ));
-
-  const sponsorsList = sponsors.map((sponsor) => (
-    <div>
-      <img
-        src={sponsor.image}
-        alt="Sponsors"
-        loading="lazy"
-        className="w-75 d-block mx-auto"
-      />
-    </div>
-  ));
-
+  
   return (
     <div className="home">
       <Header />
@@ -54,7 +24,7 @@ export default function Home() {
 
       {/* Hero */}
     <div className="container">
-    <h1>Home</h1>
+    <h1>Hi trainee</h1>
     </div>
 
       
